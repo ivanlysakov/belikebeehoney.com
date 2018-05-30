@@ -1,2 +1,2 @@
 # belikebeehoney.com
-Web site for my family beefarm
+My family beefarm Web site
