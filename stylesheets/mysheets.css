@@ -1,0 +1,92 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.container {
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: repeat(3,minmax(150px,max-content));
+grid-gap: 10px;
+width: 1200px;
+align-self: center;
+margin: auto;
+}
+
+
+.header {
+  grid-column: 1/5;
+  grid-row: 1;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  }
+
+.posts {  
+
+  grid-column: 1/4;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10 px;
+  
+  
+ 
+}
+
+.myinfo {
+  grid-column: 4;
+  grid-row: 2/4;
+  width: auto;
+  padding: 20px;
+  
+  
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.post-card{
+   
+  border: solid .5px white;
+  border-radius: 5px;
+  background-color: white;
+   padding: 10px;
+   margin : 10px
+   
+}
+
+.infocard {
+    background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+  
+}
+
+.footer {
+  grid-column: 1/5;
+  grid-row: 3;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  clear:both;
+  
+}
+
+@media screen and (max-width: 1200px) {
+  
+  }
