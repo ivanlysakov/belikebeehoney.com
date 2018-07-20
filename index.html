@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="ua">
 
 <head>
@@ -11,114 +10,268 @@
   <link rel="me" href="mailto:ivanlysakov@gmail.com">
   <link rel="me" href="skype:navivokasyl">
   <link rel="me" href="sms:380634871000">
-  <link rel="stylesheet" href="stylesheets/mysheets.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <div class="header">
+    <div class="container">
+
+      <div class="header-inner">
+
+        <label class="mobile-nav-open-btn" tabindex="0" for="mobile-nav-toggle-btn-checkbox">
+          <i class="fa fa-bars"></i>
+        </label>
+
+        <div class="header-logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+
+        <label class="mobile-nav-open-search" tabindex="0" for="mobile-nav-toggle-btn-checkbox">
+          <i class="fa fa-search"></i>
+        </label>
+
+        <input class="mobile-nav-toggle-btn-checkbox" type="checkbox" id="mobile-nav-toggle-btn-checkbox" />
+
+        <aside class="header-rightblock">
+
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-instagram"></a>
+
+            <label class="mobile-nav-search-btn">
+              <i class="fa fa-search"></i>
+            </label>
+          </div>
+
+          <div class="navigation">
+
+            <label class="mobile-nav-close-btn" tabindex="0" for="mobile-nav-toggle-btn-checkbox">
+              <i class="fa fa-close"></i>
+            </label>
+
+            <a class="navigation-link active" href="#home">Home</a>
+            <a class="navigation-link" href="#news">News</a>
+            <a class="navigation-link" href="#contact">Contact</a>
+            <a class="navigation-link" href="#about">About</a>
 
 
-  <div class="container">
-
-
-    <div class="header">
-      <div class="logo">Logo</div>
-      <div class="social">Social</div>
-      <div class="navigation"> Navigation</div>
+          </div>
+        </aside>
+      </div>
     </div>
-
-    <main class="posts">
-
-
-      <div class="post-card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Jul 19, 2018</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-
-      <div class="post-card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Jul 19, 2018</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-
-      <div class="post-card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Jul 19, 2018</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-
-      <div class="post-card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Jul 19, 2018</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-
-      <div class="post-card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Jul 19, 2018</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-
-      <div class="post-card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Jul 19, 2018</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-
-
-    </main>
-
-
-    <aside class="myinfo">
-      <div class="infocard">
-        <h2>About Me</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="infocard">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div>
-        <br>
-        <div class="fakeimg">Image</div>
-        <br>
-        <div class="fakeimg">Image</div>
-      </div>
-      <div class="infocard">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
-    </aside>
-
-
-    <footer class="footer">
-      <h2>Footer</h2>
-    </footer>
-
-
-
   </div>
 
-</body>
+  <div class="content">
+    <div class="container">
 
+      <main class="posts">
+        <div class="article">
+          <h2>Give the Gift of Education</h2>
+          <h5>December 27, 2016 </h5>
+          <div class="article-image">
+            <img src="images/1.jpg" alt="Girl and Bees">
+          </div>
+          <p>After two and a half wonderful years of our nonprofit leg being in a fiscal sponsorship with Abundance, NC, Bee
+            Downtown Foundation has taken the leap to become its own….</p>
+          <p>Read more</p>
+        </div>
+
+        <div class="article">
+          <h2>Bee Downtown Goes to Ghana!</h2>
+          <h5>January 24, 2017 </h5>
+          <div class="article-image">
+            <img src="images/2.jpg" alt="Girl and Bees">
+          </div>
+          <p>I have always loved the famous quote from Gandhi, “Be the change you wish to see in the world.” From childhood,
+            these words have spoken to me and have made…</p>
+          <p>Read more</p>
+        </div>
+
+        <div class="article">
+          <h2>Pollinator Synthesizer Ready</h2>
+          <h5>August 16, 2016 </h5>
+          <div class="article-image">
+            <img src="images/3.jpg" alt="Girl and Bees">
+          </div>
+
+          <p>The Hum of a Beehive Turned into a Symphony of Sounds In her lifetime of four to six weeks, the average worker
+            honey bee will make only 1/12 teaspoon of…</p>
+          <p>Read more</p>
+        </div>
+
+        <div class="article">
+          <h2>Late Summer: Bees Search for Food</h2>
+          <h5>September 19, 2016 </h5>
+          <div class="article-image">
+            <img src="images/4.jpg" alt="Girl and Bees">
+          </div>
+
+          <p>American Tobacco Apiary Goes on a Summer Vacation For honey bees, peak summer– July and early August– is termed
+            “The Dearth”. The ominus name is used to describe when nectar…</p>
+          <p>Read more</p>
+        </div>
+
+        <div class="article">
+          <h2>Geer Street Learning Garden</h2>
+          <h5>September 19, 2016 </h5>
+          <div class="article-image">
+            <img src="images/5.jpg" alt="Girl and Bees">
+          </div>
+
+          <p>A Collaborative Mission to Provide Food For a Community and the Bees Most people have heard the phrase, “busy as
+            a bee.” Many people, however, do not realize how accurate…</p>
+          <p>Read more</p>
+        </div>
+
+        <div class="article">
+          <h2>4 Ways To Be A Better Beekeeper</h2>
+          <h5>December 27, 2016 </h5>
+          <div class="article-image">
+            <img src="images/6.jpg" alt="Girl and Bees">
+          </div>
+
+          <p>I can say without a doubt in my mind that this is one of the most magical times of the year. Sometimes I find it
+            hard to describe, but there…</p>
+          <p>Read more</p>
+        </div>
+        <div class="article">
+          <h2>Small Bee, Big Buzz. The Good Of The Hive</h2>
+          <h5>December 27, 2016 </h5>
+          <div class="article-image">
+            <img src="images/7.jpg" alt="Girl and Bees">
+          </div>
+
+          <p>My name is Matthew Willey. I am an artist and the founder of The Good Of The Hive. I’ve personally committed to
+            hand-painting 50,000 individual honeybees in murals around the world to…</p>
+          <p>Read more</p>
+        </div>
+        <div class="article">
+          <h2>Be a David in a world of Goliaths</h2>
+          <h5>June 6, 2017</h5>
+          <div class="article-image">
+            <img src="images/8.jpg" alt="Girl and Bees">
+          </div>
+
+          <p>Last week we received over 20 letters from a 4th grade class in Durham, NC that we visited this past fall to teach
+            about honey bees and sustainability. Ms. Fussell,…</p>
+          <p>Read more</p>
+        </div>
+
+      </main>
+
+      <aside class="myinfo">
+
+        <div class="infocard">
+          <h2>About Me</h2>
+
+          <img src="images/10.jpg" alt="Girl and Bees" style="height: 240px;">
+
+          <p>My name is Matthew Willey. I am an artist and the founder of The Good Of The Hive. I’ve personally committed to
+            hand-painting 50,000 individual honeybees.</p>
+        </div>
+
+        <div class="infocard">
+
+          <div class="infocard-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-instagram"></a>
+           
+          </div>
+
+        </div>
+
+        <div class="infocard">
+
+          <form>
+            <div class="subscribe-container">
+              <h2>Subscribe for us</h2>
+              <a href="#" class="fa fa-rss"></a>
+            </div>
+
+            <div class="subscribe-container" style="background-color:white">
+              <input type="text" placeholder="Name" name="name" required>
+              <input type="text" placeholder="Email address" name="mail" required>
+
+            </div>
+
+            <div class="subscribe-container">
+              <input type="submit" value="Subscribe">
+            </div>
+          </form>
+
+        </div>
+        <div class="infocard">
+          <form class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="infocard">
+          <div class="tags-container">
+            <ul class="tags">
+              <li>
+                <a href="#" class="tag">bee</a>
+              </li>
+              <li>
+                <a href="#" class="tag">honey</a>
+              </li>
+              <li>
+                <a href="#" class="tag">urbanbees</a>
+              </li>
+              <li>
+                <a href="#" class="tag">beehive</a>
+              </li>
+              <li>
+                <a href="#" class="tag">beekeeping</a>
+              </li>
+              <li>
+                <a href="#" class="tag">nature</a>
+              </li>
+              <li>
+                <a href="#" class="tag">savethebees</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="infocard">
+          <h3>Last comments:</h3>
+
+          <div class="comments-container">
+
+
+          </div>
+
+
+
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <h2>
+        <span class="small-white-hex"></span>Think Outside The Hive</h2>
+    </div>
+  </footer>
+</body>
 
 </html>
