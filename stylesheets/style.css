@@ -272,13 +272,32 @@ form.search-container::after {
    border-left-color: crimson; 
 }
 
+.comments-container{
+  display: block;
+
+}
+
+.comment{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #818d9a;
+}
+
+.comment > div{
+  margin: 5px 5px 5px 0;
+}
+.text-comment{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+
+
 @media (min-width: 1280px) {
   .posts {
     width: 75%;
   }
 }
-
-
 
 
 @media (min-width: 768px) {
