@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  max-width: 1200px;
+  
+}
+
+
+.content {
+  padding: 30px;
+ 
+}
+
+.posts {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  
+}
+
+.article {
+  display: grid;
+  background-color:#FBE5B6;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.article .article-image {
+  
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  
+}
+
+
+.article:hover .article-image {
+  
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+
+.infocard {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.infocard ~ div {
+  text-align: center;
+}
+
+
+
+.footer {
+  background-color: rgb(88, 121, 151);
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+
+
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.subscribe-container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* Style the search field */
+form.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  
+}
+
+/* Style the submit button */
+ form.search-container button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  
+} 
+
+form.search-container button:hover {
+  background: #0b7dda;
+} 
+
+/* Clear floats */
+form.search-container::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+
+
+
+
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: crimson; 
+}
+
+@media (min-width: 1280px) {
+  .posts {
+    width: 75%;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .article {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .article:nth-child(odd) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .article {
+    margin-right: 20px;
+  }
+
+  .article {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.article-image {
+  width: 100%;
+  
+}
+
+.myinfo {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  .myinfo {
+    padding-left: 20px;
+    width: 25%;
+  }
+}
