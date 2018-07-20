@@ -1,7 +1,7 @@
 .header {
     background-color: rgb(88, 121, 151);
     font-size: 40px;
-    padding: 30px;
+    
     width: 100%;
   }
     
@@ -29,11 +29,18 @@
   }
   
   .header-logo{
-    width: calc(100%-200px)
+    width: calc(100%-200px);
+   
   }
   
+  .header-logo img{
+    height: 150px;
+   
+  } 
+
   .mobile-nav-search-btn  {
     color : #E3AC41;
+    margin-right: 10px;
   }
   .mobile-nav-open-search {
     position: absolute;
@@ -41,9 +48,7 @@
     right: 0;
     color : #E3AC41;
     margin-right: 10px;
-   
-    
-}
+   }
 
   .mobile-nav-open-btn {
     position: absolute;
@@ -53,6 +58,7 @@
     margin: 0;
     cursor: pointer;
     outline: none;
+    margin-left: 10px;
   }
     
   .mobile-nav-toggle-btn-checkbox {
@@ -107,7 +113,7 @@
   }
 
   
-  /* Add a black background color to the top navigation */
+
   .navigation {
     display: flex;
     flex-flow: column;
@@ -115,8 +121,7 @@
     width: 100%;
   }
   
-    
-  /* Style the links inside the navigation bar */
+ 
   .navigation-link {
     float: left;
     color : #E3AC41;
@@ -128,14 +133,21 @@
     
   }
   
-  /* Change the color of links on hover */
+
   .navigation-link:hover {
     
     color: rgb(0, 0, 0);
   }
 
-
-
+  .comments-container {
+    display:flex;
+  }
+  .avatar{
+    display: block;
+    height: 32px;
+    width: 32px;
+    float: left;
+  }
 
 
 
