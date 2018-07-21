@@ -35,17 +35,19 @@
   
   .header-logo img{
     height: 150px;
+    padding: 10px;
    
   } 
 
   .mobile-nav-search-btn  {
     color : #E3AC41;
     margin-right: 10px;
+    padding: 10;
   }
   .mobile-nav-open-search {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
     color : #E3AC41;
     margin-right: 10px;
    }
@@ -59,6 +61,7 @@
     cursor: pointer;
     outline: none;
     margin-left: 10px;
+    padding: 10;
   }
     
   .mobile-nav-toggle-btn-checkbox {
@@ -166,6 +169,7 @@
       }
       .social {
         display: flex;
+        padding: 10px;
       }
 
       .header-inner {
@@ -183,5 +187,6 @@
      
         .mobile-nav-open-search {
             display: none;
+          
         }
   }
