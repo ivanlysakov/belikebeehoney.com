@@ -39,7 +39,7 @@ body {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  text-align: center;
+  text-align: left;
 }
 
 .article .article-image {
@@ -79,9 +79,8 @@ body {
 }
 
 .footer-container {
-  text-align: center;
+   text-align: center;
 }
-
 
 
 
@@ -210,11 +209,6 @@ form.search-container::after {
   display: table;
 } 
 
-
-
-
-
-
 .tags {
   list-style: none;
   margin: 0;
@@ -277,10 +271,19 @@ form.search-container::after {
 
 }
 
+
+.avatar{
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: left;
+}
+
 .comment{
   display: flex;
-  justify-content: space-between;
+  text-align: left;
   border-bottom: 1px solid #818d9a;
+ 
 }
 
 .comment > div{
@@ -290,7 +293,13 @@ form.search-container::after {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 } 
+
+
+
+
+
 
 
 @media (min-width: 1280px) {
