@@ -39,7 +39,7 @@ body {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  text-align: center;
+  text-align: left;
 }
 
 .article .article-image {
@@ -79,9 +79,8 @@ body {
 }
 
 .footer-container {
-  text-align: center;
+   text-align: center;
 }
-
 
 
 
@@ -210,11 +209,6 @@ form.search-container::after {
   display: table;
 } 
 
-
-
-
-
-
 .tags {
   list-style: none;
   margin: 0;
@@ -301,6 +295,37 @@ form.search-container::after {
   text-overflow: ellipsis;
   
 } 
+
+
+.hexagon {
+  position: relative;
+  width: 20px; 
+  height: 11.55px;
+  background-color: #64C7CC;
+  margin: 5.77px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 5.77px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 5.77px solid #64C7CC;
+}
+
+
 
 
 @media (min-width: 1280px) {
