@@ -277,10 +277,19 @@ form.search-container::after {
 
 }
 
+
+.avatar{
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: left;
+}
+
 .comment{
   display: flex;
-  justify-content: space-between;
+  text-align: left;
   border-bottom: 1px solid #818d9a;
+ 
 }
 
 .comment > div{
@@ -290,6 +299,7 @@ form.search-container::after {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 } 
 
 
