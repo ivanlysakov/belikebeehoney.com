@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,20 +17,16 @@ body {
   flex-flow: row wrap;
   margin: auto;
   max-width: 1200px;
-  
 }
-
 
 .content {
   padding: 30px;
- 
 }
 
 .posts {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  
 }
 
 .article {
@@ -38,7 +36,8 @@ body {
   margin-bottom: 20px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  
+
   text-align: center;
 }
 
@@ -46,20 +45,33 @@ body {
   text-align: left;
 }
 
-.article .article-image {
+ 
+.article-image{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+ 
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+ 
   
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-  
+}
+
+.article:hover .image{
+
+  transform: scale(1.2);
 }
 
 
 
-.article:hover .article-image {
-  
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-}
+
+
 
 
 .infocard {
@@ -69,12 +81,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .infocard ~ div {
   text-align: center;
 }
-
-
 
 .footer {
   background-color: rgb(88, 121, 151);
@@ -86,8 +95,6 @@ body {
 .footer-container {
    text-align: center;
 }
-
-
 
 .fa {
   padding: 5px;
